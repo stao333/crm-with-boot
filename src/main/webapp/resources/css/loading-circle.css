@@ -1,0 +1,30 @@
+.loader {
+  border: 16px solid #80ff80;
+  border-radius: 50%;
+  border-top: 16px solid #101010;
+  width: 120px;
+  height: 120px;
+  align: centre;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 9000;
+  top: 50%;
+  left: 50%;
+  margin: 20px 0 0 -100px;
+}

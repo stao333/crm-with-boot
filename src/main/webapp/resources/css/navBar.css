@@ -1,0 +1,111 @@
+#menu {
+    width: 760px;
+    min-width: 760px;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+#menu_logo_layout {
+    display: flex;
+}
+
+#ingg_logo {
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+ul#navTabs {
+    list-style: none;
+}
+
+ul#navTabs li {
+    display: inline;
+}
+
+ul#navTabs li a {
+    float: left;
+    text-decoration: none;
+    margin-left: 3px;
+    background: #e2e2e2 repeat-x;
+}
+
+ul#navTabs li span {
+    font: bold 1.1em arial, verdana, tahoma, sans-serif;
+    height: 50px;
+    width: 140px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: #98923e;
+}
+
+ul#navTabs li span:hover {
+    color: white;
+}
+
+
+/* Active State */
+
+ul#navTabs .current a,
+ul#navTabs li:hover > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    background: #98923e;
+}
+
+
+/* Hide Submenus */
+
+ul#navTabs ul {
+    display: none;
+    z-index: 1000;
+}
+
+
+/* Show submenus on hover */
+
+ul#navTabs li:hover > ul {
+    position: absolute;
+    display: block;
+    width: 710px;
+    height: 90px;
+    margin: 45px 0 0 5px;
+    padding-top: 20px;
+    background: #98923e;
+}
+
+ul#navTabs li:hover > ul li a {
+    float: left;
+    font: bold 1.1em arial, verdana, tahoma, sans-serif;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: .5px .5px .5px #110000;
+    margin: 0;
+    padding: 0 30px 0 0;
+    background: #98923e repeat-x;
+}
+
+ul#navTabs li:hover > ul li a:hover {
+    color: #120000;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.active_tab {
+    border-top: solid 3px;
+    border-top-color: #febb15;
+    background-color: #ffffff !important;
+    color: black !important;
+}
+
+.active_tab span {
+    color: black !important;
+    font: bold 1.1em arial, verdana, tahoma, sans-serif;
+}
+
+html, body {
+    overflow: visible;
+}
