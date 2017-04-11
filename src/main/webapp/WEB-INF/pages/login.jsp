@@ -6,13 +6,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Spring Security Example</title>
+<title>Example CRM Login</title>
 </head>
 <body>
-
+	<h3 id="banner">Login to Example CRM</h3>  
 	<form action="login" method="post">
 
-		<div>
+			<table>
+				<tr>
+					<td>Username:</td>
+					<td><input type='text' name='username' /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type='password' name='password'></td>
+				</tr>
+				<tr>
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan='2'><input name="submit" type="submit">&nbsp;<input name="reset" type="reset"></td>
+				</tr>
+			</table>
+
+<%-- 		<div>
 			<div>
 				<input type="text" name="username"
 					placeholder="User Name" />
@@ -31,7 +48,8 @@
 				<div>You have been logged out.</div>
 			</c:if>
 		</div>
-		<input type="hidden" name="${_csrf.parameterName}"
+ --%>		
+ 			<input type="hidden" name="${_csrf.parameterName}"
 			value="${_csrf.token}" />
 	</form>
 

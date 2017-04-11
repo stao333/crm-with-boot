@@ -43,7 +43,7 @@
     	<li><a data-toggle="tab" href="#activitiesPanel">Activities</a></li>
     </ul>
     </div>
-    <div class="col-md-4" ><h6><a href="logout">Logout</a></h6></div>
+    <div class="col-md-4" ><h6><a href="${pageContext.request.contextPath}/logout">Logout</a></h6></div>
   </div>
 	
 	<div class="tab-content">

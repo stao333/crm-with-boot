@@ -55,7 +55,7 @@ public class ContactDaoImpl implements ContactDao
 	@Override
 	public void updateContact( Contact contact ) {
 		Session session = sessionFactory.getCurrentSession();
-		session.update( contact );
+		session.merge( contact ); // we have to do a merge instead of update for this version of hibernate
 	}
 
 	@Override
