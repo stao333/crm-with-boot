@@ -13,11 +13,6 @@ public class CrmWithBootApplication
 		SpringApplication.run( CrmWithBootApplication.class, args );
 	}
 
-	// @Bean
-	// public HibernateJpaSessionFactoryBean sessionFactory() {
-	// return new HibernateJpaSessionFactoryBean();
-	// }
-
 	@Bean
 	public SessionFactory sessionFactory( HibernateEntityManagerFactory hemf ) {
 		return hemf.getSessionFactory();

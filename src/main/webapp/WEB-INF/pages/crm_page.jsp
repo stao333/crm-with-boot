@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Technical Test CRM</title>
+    <title>Example CRM</title>
 
     <script type="application/javascript" src="resources/js/external/jquery-3.1.0.min.js"></script>
     <script type="application/javascript" src="resources/js/external/jquery-ui.min.js"></script>
@@ -36,14 +36,14 @@
 <div class="container">
 
   <div class="row">
-    <div class="col-md-4" ><b>Technical Test CRM</b></div>
+    <div class="col-md-4" ><b>Example CRM</b></div>
     <div class="col-md-4" >
     <ul class="nav nav-tabs">
     	<li class="active"><a data-toggle="tab" href="#contactsPanel">Contacts</a></li>
     	<li><a data-toggle="tab" href="#activitiesPanel">Activities</a></li>
     </ul>
     </div>
-    <div class="col-md-4" ><h6><a href="<c:url value='j_spring_security_logout'/>">Logout</a></h6></div>
+    <div class="col-md-4" ><h6><a href="logout">Logout</a></h6></div>
   </div>
 	
 	<div class="tab-content">
